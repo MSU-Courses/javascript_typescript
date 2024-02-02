@@ -88,7 +88,7 @@ console.log("Hello, world");
 
 После установки вы можете выполнять файлы JavaScript, прописав в консоли:
 ```shell
-node index.js
+node sample01.js
 ```
 Либо прописав в консоли `node` писать JS код.
 

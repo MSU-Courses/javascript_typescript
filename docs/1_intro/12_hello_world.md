@@ -62,7 +62,7 @@ _Файл index.html_
 <html lang="en">
 <head>
     <!-- Подключение внешнего JS-файла -->
-    <script src="index.js"></script>
+    <script src="sample01.js"></script>
 </head>
 <body>
 <p>Посмотри консоль разработчика!</p>
@@ -75,7 +75,7 @@ _Файл index.html_
 > [!IMPORTANT]
 > Если использовать атрибут src совместно с кодом внутри, то содержимое будет игнорироваться
 > ```html
-> <script src="index.js">
+> <script src="sample01.js">
 > console.log("Hello, world!"); // игнорируется
 > </script>
 > ```
