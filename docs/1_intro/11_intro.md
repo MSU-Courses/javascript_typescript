@@ -69,7 +69,7 @@ Javascript в свою очередь — это скриптовый язык, 
 
 Открываем вашу HTML страницу и нажимаем клавишу `F12` (если используете Mac `Ctrl+Opt+J`). Переходим во вкладку `Консоль` (Console), там будут показаны все ошибки и другие сообщения.
 
-![devtools](/images/devtools.png?raw=true)
+![devtools](/_images/devtools.png?raw=true)
 
 В консоли разработчика присутствует множество других полезных функций.
 
@@ -92,7 +92,7 @@ node sample01.js
 ```
 Либо прописав в консоли `node` писать JS код.
 
-![Node Run](/images/node_run.png)
+![Node Run](/_images/node_run.png)
 
 > [!NOTE]
 > Кстати, вы написали свой первый Hello World на JS, поздравляю!
