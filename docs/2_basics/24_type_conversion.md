@@ -39,7 +39,7 @@ String(false); Результат: false
 ### Приведение к числу `number`
 
 > [!NOTE]
-> Если JavaScript не может привести один тип к другому, то возвращается  `NaN` (Not a Number).
+> Если JavaScript не может привести тип number к другому, то возвращается  `NaN` (Not a Number).
 
 ```js
 // приведение `string` к `number`
