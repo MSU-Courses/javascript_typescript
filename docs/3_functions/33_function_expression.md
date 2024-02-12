@@ -57,12 +57,12 @@ sub = mul;
 Теперь рассмотрим синтаксис `Function Expression` на примере функции сложения двух чисел `add(a, b)`.
 
 ```js
-const add = function(a, b) {
+const add = function(a, b) { // можно использовать ключевое слово let
     return a + b;
 }
 ```
 
-Здесь переменная add получает значение новой функции, что является **Function Expression**.
+Здесь константа `add` получает значение новой функции, что является **Function Expression**.
 
 После ключевого слова function отсутствует имя. Для Function Expression допускается его отсутствие.
 
