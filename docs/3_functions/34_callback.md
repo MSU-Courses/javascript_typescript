@@ -136,7 +136,7 @@ const sum = function(a, b) {
   return a + b;
 };
 
-// именованная
+// именованная функция
 const sum = function sum(a, b) {
     return a + b;
 }
