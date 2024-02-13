@@ -32,3 +32,72 @@ const otherFunc = function (a, b) {
 
 func(1, otherFunc);  // успешно передаём другую функцию в качестве аргумента
 ```
+
+## Применение функций обратного вызова
+
+Как уже было сказано, колбэки применяются повсеместно.
+
+В качестве примера рассмотрим реальный случай использования.
+
+**Пример №1**
+```js
+/**
+ * Обработка соглашения пользователя
+ * @param isAgree {boolean} Булево значение, указывающее, согласен ли пользователь.
+ * @param yes Функция, которая будет вызвана, если пользователь согласен.
+ * @param no Функция, которая будет вызвана, если пользователь не согласен.
+ */
+function userAgree(isAgree, yes, no) {
+    if (isAgree) {
+        yes();
+        return;
+    }
+    no();
+    return;
+}
+
+// функция для обработки согласия пользователя
+function processAgreement() {
+    console.log("Пользователь согласен");
+    // Дальнейшая обработка в случае согласия пользователя
+}
+
+// функция для обработки отказа пользователя
+function processDisagreement() {
+    console.log("Пользователь не согласен");
+    // Дополнительная обработка в случае отказа пользователя
+}
+
+const isUserAgree = confirm("Вы согласны учавствовать в опросе?");
+
+userAgree(isUserAgree, processAgreement, processDisagreement);
+```
+
+**Пример №2**
+```js
+// Функция, которая принимает два числа и callback функцию
+function applyOperation(a, b, operation, callback) {
+    const result = operation(a, b); 
+    // функция которая была передана в качестве аргумента
+    // выполняется внутри другой функции
+    callback(result);
+}
+
+// Функция для сложения двух чисел
+function add(a, b) {
+    return a + b;
+}
+
+// Функция для умножения двух чисел
+function multiply(a, b) {
+    return a * b;
+}
+
+// Callback функция для вывода результата в консоль
+function printResult(result) {
+    console.log("Результат операции:", result);
+}
+
+// Вызов функции applyOperation с операцией сложения и callback функцией для печати результата
+applyOperation(5, 3, add, printResult);
+```
