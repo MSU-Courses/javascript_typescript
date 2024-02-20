@@ -17,3 +17,6 @@
   * [Function Expression](3_functions/33_function_expression.md)
   * [Функции обратного вызова](3_functions/34_callback.md)
   * [Стрелочные функции](3_functions/35_arrow_functions.md)
+* [Массивы](4_arrays/readme.md)
+  * [Массивы в JS](4_arrays/41_arrays_basics.md)
+  * [Деструктуризация и оператор расширения](4_arrays/42_destructuring_spread_operator.md)
