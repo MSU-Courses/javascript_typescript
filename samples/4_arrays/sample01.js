@@ -61,3 +61,5 @@ function reverseString(inputString) {
 
     return reversedString;
 }
+
+console.log(reverseString('hello')); // "olleh
