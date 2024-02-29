@@ -220,7 +220,66 @@ if ("brand" in car) {
 }
 ```
 
-## Оператор `for ... of`
+
+## Перебор объектов
+
+Иногда нам может понадобиться перебор объектов, например, их ключей или значений, или целых свойств. Для этого используются следующие методы:
+
+- `Object.keys(obj)`: возвращает массив ключей.
+- `Object.values(obj)`: возвращает массив значений.
+- `Object.entries(obj)`: возвращает массив пар `[ключ, значение]`.
+
+```js
+const user = {
+  name: 'John',
+  age: 30,
+  email: 'john@example.com'
+};
+
+// Получение массива ключей объекта
+const keys = Object.keys(user);
+console.log(keys); // Вывод: ['name', 'age', 'email']
+
+// Получение массива значений объекта
+const values = Object.values(user);
+console.log(values); // Вывод: ['John', 30, 'john@example.com']
+
+// Получение массива пар [ключ, значение] объекта
+const entries = Object.entries(user);
+console.log(entries); // Вывод: [['name', 'John'], ['age', 30], ['email', 'john@example.com']]
+```
+
+Применение методов в практических проектах.
+
+```js
+const locations = {
+  paris: {
+    name: 'Париж',
+    description: 'Столица Франции, известная своими музеями, архитектурой и культурным наследием.'
+  },
+  london: {
+    name: 'Лондон',
+    description: 'Столица Великобритании, известная своими историческими достопримечательностями и разнообразными культурными мероприятиями.'
+  },
+  newyork: {
+    name: 'Нью-Йорк',
+    description: 'Крупнейший город США, известный своими небоскребами, театрами и культурными мероприятиями.'
+  }
+};
+
+// Получение массива названий местоположений
+const locationNames = Object.keys(locations);
+
+// Получение массива описаний местоположений
+const locationDescriptions = Object.values(locations).map(location => location.description);
+
+// Вывод списка местоположений и их описаний
+locationNames.forEach((locationName, index) => {
+  console.log(`${index + 1}. ${locationName}: ${locationDescriptions[index]}`);
+});
+```
+
+## Оператор `for ... in`
 
 Для перебора свойств объекта используется цикл `for...in`:
 
@@ -239,3 +298,4 @@ for(let key in player) {
 ```
 
 В цикле `for...in` переменная `key` принимает имя каждого свойства объекта, а через `player[key]` можем получить значение каждого свойства.
+
