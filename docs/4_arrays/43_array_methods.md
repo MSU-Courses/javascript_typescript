@@ -52,7 +52,7 @@ console.log(fruits); // ['яблоко', 'банан', 'киви', 'апельс
 ```js
 const fruits = ['яблоко', 'груша', 'апельсин'];
 const removed = fruits.splice(1, 1, 'банан', 'киви');
-console.log(removed); // [ 'апельсин' ]
+console.log(removed); // [ 'груша' ]
 ```
 
 ## Метод `slice`
