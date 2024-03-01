@@ -40,9 +40,9 @@ console.log(player1.health, player2.health); // 30 30
 
 Это можно представить следующим образом.
 * Переменная `player1` ссылается на определенную область памяти, где хранится сам объект.
-![Object Reference](../../../_images/object_one.png)
+![Object Reference](../../_images/object_one.png)
 * Теперь переменная `player2` ссылается на ту же область памяти.
-![Object Reference](../../../_images/object_two.png)
+![Object Reference](../../_images/object_one.png)
 
 То есть у нас только один экземпляр объекта, но на него ссылаются две переменные. Поэтому, если изменить одну переменную, это приведет к изменению и другой(-их).
 
