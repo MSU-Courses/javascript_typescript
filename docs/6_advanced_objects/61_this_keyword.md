@@ -307,10 +307,12 @@ const player1 = {
             // так как это обычная функция, поэтому this будет определено в глобальной области видимости или будет undefined
             return `Hello, my name is ${this.username}`;
         }
-        // Вызов функции generateGreeting в контексте объекта player1
+        // Значение this будет взято из глобального контекста
         return generateGreeting();
     }
 }
+
+player1.greet(); // Hello, my name is undefined
 
 // Создание объекта player2
 const player2 = {
@@ -324,10 +326,13 @@ const player2 = {
             // поэтому this здесь будет ссылаться на объект player2
             return `Hello, my name is ${this.username}`;
         }
-        // Вызов функции generateGreeting в контексте объекта player2
+        // Значение `this` будет взято из внешнего контекста
+       // В данном случае из контекста объекта player2
         return generateGreeting();
     }
 }
+
+player2.greet(); // Hello, my name is Alex
 ```
 
 ## Итог
