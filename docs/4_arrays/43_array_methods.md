@@ -288,7 +288,7 @@ const bWords = words.filter(word => word.startsWith('b'));
 console.log(bWords); // [ 'banana' ]
 ```
 
-## Метод `map(function callback(currentValue[, index[, array]]) { ... })`
+## Метод `map`
 
 Метод `map()` создаёт новый массив, содержащий результат вызова указанной функции для каждого элемента исходного
 массива.
