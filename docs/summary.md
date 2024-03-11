@@ -30,3 +30,4 @@
   * [Тип данных `null`](5_objects/55_null.md)
   * [Объекты `Map` и `Set`](5_objects/56_map_set.md)
   * [Массивы - это объекты](5_objects/57_array_is_object.md)
+* [Продвинутые объекты](6_advanced_objects)
