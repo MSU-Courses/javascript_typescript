@@ -20,7 +20,7 @@ class Player {
     // тело класса
 };
 
-// анонимный класс
+// class expression
 const player = class {
     // тело класса
 }
