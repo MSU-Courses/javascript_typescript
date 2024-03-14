@@ -48,9 +48,14 @@ function Player(username, age) {
 const player1 = new Player("Alex", 22);
 const player2 = new Player("Robert", 18);
 
-console.log(player1.username); // "Alex"
-console.log(player2.username); // "Robert"
+// player: { username: "Alex", age: 22 }
+console.log(player1);
+// player: { username: "Robert", age: 18 }
+console.log(player2);
 ```
+
+> [!NOTE]
+> Ключевое слово `new` в JavaScript используется для создания экземпляра объекта с использованием функции-конструктора.
 
 Теперь необходимо понять, **как работает функция-конструктор**.
 1. Создается новый пустой объект, который затем присваивается ключевому слову this.
@@ -70,3 +75,4 @@ function Player(username, age) {
 }
 ```
 
+Думаю, теперь понятно, зачем используются функции-конструкторы: мы можем создавать множество объектов с помощью одной функции.
