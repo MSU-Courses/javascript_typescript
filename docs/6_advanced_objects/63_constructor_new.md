@@ -76,3 +76,22 @@ function Player(username, age) {
 ```
 
 Думаю, теперь понятно, зачем используются функции-конструкторы: мы можем создавать множество объектов с помощью одной функции.
+
+## Использования слово `return`
+
+Вы можете использовать ключевое слово `return` в функции-конструкторе, однако в этом случае объект, связанный с ключевым словом `this`, не будет возвращаться.
+
+```javascript
+function Player(username, age) {
+    this.username = username;
+    this.age = age;
+    return {
+        username: "Alex",
+        age: 23,
+    };
+}
+
+// player: { username: "Alex", age: 23 }
+// поскольку мы используем ключевое слово `return` и возвращаем другой объект
+const player = new Player("John", 34);
+```
