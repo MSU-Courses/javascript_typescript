@@ -40,4 +40,4 @@
 * [Продвинутый JS. Модули](7_modules)
   * [Строгий режим - 'use_strict'](7_modules/71_use_strict.md)
   * [О модулях](7_modules/72_modules.md)
-  * [Импорт и экспорт](7_modules/73_export_import.md)
+  * [Экспорт и импорт](7_modules/73_export_import.md)
