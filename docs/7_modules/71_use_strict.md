@@ -46,15 +46,15 @@
    ```
 
 5. **Запрещает изменение значения `this` в глобальном контексте:**
-```javascript
-"use strict";
-
-function showThis() {
-    console.log(this); // this будет равно undefined в строгом режиме в глобальном контексте
-}
-
-showThis();
-```
+   ```javascript
+   "use strict";
+   
+   function showThis() {
+       console.log(this); // this будет равно undefined в строгом режиме в глобальном контексте
+   }
+   
+   showThis();
+   ```
 
 Директиву `use strict` можно использовать и в функциях, что приведет к применению строгого режима только внутри этой функции, ограничивая его область действия.
 ```js
