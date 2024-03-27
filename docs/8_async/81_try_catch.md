@@ -88,6 +88,34 @@ throw new ReferenceError("error");
 // и другие ...
 ```
 
+> [!TIP]
+> Инструкция `throw` прерывает выполнение текущей функции.
+
+Рассмотрим пример.
+```js
+/**
+ * Выполняет деление двух чисел.
+ *
+ * @param {number} a - Первое число (делимое).
+ * @param {number} b - Второе число (делитель).
+ * @returns {number} - Результат деления первого числа на второе.
+ * @throws {Error} - Выбрасывает ошибку, если второе число равно 0.
+ */
+function div(a, b) {
+    if (b === 0) {
+        throw new Error("divide by zero");
+    }
+
+    return a / b;
+}
+
+try {
+    div(1, 0);
+} catch (err) {
+    console.log(err.message);
+}
+```
+
 ## Ключевое слово `finally`
 
 Конструкция `try ... catch` может содержать еще ключевое слово `finally`.
