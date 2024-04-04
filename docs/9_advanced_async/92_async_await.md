@@ -121,3 +121,5 @@ async function getResult() {
 
 getResult();
 ```
+
+В настоящее время в новых проектах все чаще используется `async/await` вместо привычного метода с `then` и `catch`.
