@@ -203,7 +203,7 @@ console.log(array.indexOf(NaN));   // Вернет -1
 
 ### Возвращаемое значение
 
-Метод `forEach()` возвращает [undefined](../2_basics/23_data_types.md).
+Метод `forEach()` возвращает [undefined](../02_basics/23_data_types.md).
 
 ### Примеры
 
