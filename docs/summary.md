@@ -1,9 +1,9 @@
 # Содержание
 
 * [Введение](readme.md)
-* [Начало](1_intro/readme.md)
-  * [Немного о Javascript](1_intro/11_intro.md)
-  * ["Как заставить браузер говорить?"](1_intro/12_hello_world.md)
+* [Начало](01_intro/readme.md)
+  * [Немного о Javascript](01_intro/11_intro.md)
+  * ["Как заставить браузер говорить?"](01_intro/12_hello_world.md)
 * [Основы JS](2_basics/readme.md)
   * [Написание JS кода](2_basics/21_writing_js_code.md)
   * [Переменные](2_basics/22_variables.md)
