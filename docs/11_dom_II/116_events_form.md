@@ -38,19 +38,17 @@ document.forms.auth.elements.password;
 
 ```html
 <form name="auth">
-    <input type="radio" value="gender" name="Female">
-    <input type="radio" value="gender" name="Male">
+    <input type="radio" value="Female" name="gender">
+    <input type="radio" value="Male" name="gender">
 </form>
 ```
 
 ```js
-document.forms.auth.elements.gender[0]; // <input type="radio" value="gender" name="Female">
-document.forms.auth.elements.gender[1]; // <input type="radio" value="gender" name="Male">
+document.forms.auth.elements.gender[0]; // <input type="radio" value="Female" name="gender">
+document.forms.auth.elements.gender[1]; // <input type="radio" value="Male" name="gender">
 ```
 
 ## Получение значений формы
-
-
 
 ### `input` и `textarea`
 
