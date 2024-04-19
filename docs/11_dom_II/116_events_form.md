@@ -160,3 +160,5 @@ nameInput.addEventListener('change', function(event) {
 ## Пример валидации формы
 
 Пример валидации формы с использованием HTML5 и JS: [ссылка](../../samples/11_dom_II/sample_01_validation.html).
+
+Существует множество других браузерных событий; все возможные события можно просмотреть [здесь](https://developer.mozilla.org/ru/docs/Web/Events).
