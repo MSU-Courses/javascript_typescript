@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<form id="myForm">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br>
+    <span class="error-message" id="usernameError"></span><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <span class="error-message" id="emailError"></span><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" minlength="8" required><br>
+    <span class="error-message" id="passwordError"></span><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    document.getElementById('myForm').addEventListener('submit', function (event) {
+        const username = document.getElementById('username');
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const usernameError = document.getElementById('usernameError');
+        const emailError = document.getElementById('emailError');
+        const passwordError = document.getElementById('passwordError');
+
+        let isValid = true;
+
+        // Проверка имени пользователя
+        if (username.value.trim() === '') {
+            usernameError.textContent = 'Username is required';
+            isValid = false;
+        } else {
+            usernameError.textContent = '';
+        }
+
+        // Проверка email
+        if (email.value.trim() === '') {
+            emailError.textContent = 'Email is required';
+            isValid = false;
+        } else if (!isValidEmail(email.value.trim())) {
+            emailError.textContent = 'Invalid email format';
+            isValid = false;
+        } else {
+            emailError.textContent = '';
+        }
+
+        // Проверка пароля
+        if (password.value.length < 8) {
+            passwordError.textContent = 'Password must be at least 8 characters long';
+            isValid = false;
+        } else {
+            passwordError.textContent = '';
+        }
+
+        // Если форма не валидна, отменяем отправку
+        if (!isValid) {
+            event.preventDefault();
+        }
+    });
+
+    // Функция для проверки корректности email
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+</script>
+
+</body>
+</html>
