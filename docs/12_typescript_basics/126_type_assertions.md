@@ -28,3 +28,8 @@ myInput.value = "Hello, TypeScript!";
 ```
 
 В этом примере `<HTMLInputElement>` явно указывает TypeScript на тип данных переменной `inputElement`. Такой синтаксис также позволяет использовать переменную в соответствии с ее утвержденным типом без ошибок компиляции.
+
+## Ссылки
+
+- [Type Assertion](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions) (typescriptlang.org)
+- [TypeScript Handbook: Type Aliases](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-aliases)

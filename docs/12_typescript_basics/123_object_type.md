@@ -64,4 +64,3 @@ function printUser(user: { readonly name: string; readonly age: number }) {
 - [TypeScript Handbook: Objects](https://www.typescriptlang.org/docs/handbook/2/objects.html)
 - [TypeScript Handbook: Readonly properties](https://www.typescriptlang.org/docs/handbook/2/objects.html#readonly-properties)
 - [TypeScript Handbook: Optional properties](https://www.typescriptlang.org/docs/handbook/2/objects.html#optional-properties)
-  `;

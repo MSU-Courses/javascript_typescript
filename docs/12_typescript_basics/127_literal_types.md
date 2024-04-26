@@ -22,3 +22,8 @@ displayStatus("pending"); // Ошибка: Нельзя передать зна�
 ```
 
 В обоих примерах Literal Types помогают сделать ваш код более явным и предотвращают ошибки, связанные с неправильными значениями.
+
+## Ссылки
+
+- [Literal Types](https://www.typescriptlang.org/docs/handbook/literal-types.html)
+- [TypeScript Handbook: Literal Types](https://www.typescriptlang.org/docs/handbook/literal-types.html)

@@ -58,3 +58,9 @@ const user: User = {
 ```
 
 Такая явная типизация функций позволяет более четко определить ожидаемую сигнатуру функции и улучшить контроль за её использованием.
+
+## Ссылки
+
+- [Типы данных в TypeScript](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+- [TypeScript Handbook: Basic Types](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+- [Типизация функций](https://www.typescriptlang.org/docs/handbook/2/functions.html)
