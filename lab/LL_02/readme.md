@@ -32,21 +32,14 @@
 Реализуйте следующие функции для анализа транзакций.
 
 1. `getUniqueTransactionTypes(transactions)`
-
-- Возвращает массив уникальных типов транзакций.
-- Используйте `Set()` для выполнения задания.
-
+   - Возвращает массив уникальных типов транзакций.
+   - Используйте `Set()` для выполнения задания.
 2. `calculateTotalAmount(transactions)` – Вычисляет сумму всех транзакций.
 3. `calculateTotalAmountByDate(transactions, year, month, day)` _[extra]_
-
-- Вычисляет общую сумму транзакций за указанный год, месяц и день.
-- Параметры year, month и day являются необязательными.
-- В случае отсутствия одного из параметров, метод производит расчет по остальным.
-
-4. `getTransactionByType(transactions, type)`
-
-- Возвращает транзакции указанного типа (debit или credit).
-
+   - Вычисляет общую сумму транзакций за указанный год, месяц и день.
+   - Параметры year, month и day являются необязательными.
+   - В случае отсутствия одного из параметров, метод производит расчет по остальным.
+4. `getTransactionByType(transactions, type)` - Возвращает транзакции указанного типа (`debit` или `credit`).
 5. `getTransactionsInDateRange(transactions, startDate, endDate)` – Возвращает массив транзакций, проведенных в указанном диапазоне дат от `startDate` до `endDate`.
 6. `getTransactionsByMerchant(transactions, merchantName)` – Возвращает массив транзакций, совершенных с указанным `merchantName`.
 7. `calculateAverageTransactionAmount(transactions)` – Возвращает среднее значение транзакций.
@@ -55,12 +48,10 @@
 10. `findMostTransactionsMonth(transactions)` – Возвращает месяц, в котором было больше всего транзакций.
 11. `findMostDebitTransactionMonth(transactions)` – Возвращает месяц, в котором было больше дебетовых транзакций.
 12. `mostTransactionTypes(transactions)`
-
-- Возвращает каких транзакций больше всего.
-- Возвращает `debit`, если дебетовых.
-- Возвращает `credit`, если кредитовых.
-- Возвращает `equal`, если количество равно.
-
+    - Возвращает каких транзакций больше всего.
+    - Возвращает `debit`, если дебетовых.
+    - Возвращает `credit`, если кредитовых.
+    - Возвращает `equal`, если количество равно.
 13. `getTransactionsBeforeDate(transactions, date)` – Возвращает массив транзакций, совершенных до указанной даты.
 14. `findTransactionById(transactions, id)` – Возвращает транзакцию по ее уникальному идентификатору (`id`).
 15. `mapTransactionDescriptions(transactions)` – Возвращает новый массив, содержащий только описания транзакций.
