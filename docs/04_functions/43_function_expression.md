@@ -33,7 +33,7 @@ function div (a, b) {
 // так как это приведет к вызову функции и возвращению значения, а не копированию функции.
 let oneMoreDiv = div;
 
-oneMoreDiv(1, 2); // 3
+oneMoreDiv(6, 2); // 3
 ```
 
 Мы даже можем сделать так:
@@ -100,7 +100,7 @@ const add = function (a, b) {
     return a + b;
 }
 
-add(1, 3); // 3 (будет вызвана)
+add(1, 3); // 4 (будет вызвана)
 ```
 
 ## Когда использовать `Function Declaration` и `Function Expression`?

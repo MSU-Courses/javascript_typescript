@@ -182,6 +182,6 @@ numbers[1] = 3;
 const arr = [1, 2, 3];
 let oneMoreArr = arr;
 oneMoreArr.push(4); // Мы можем изменять содержимое массива, не изменяя ссылку на него
-console.log(arr); // Выведет: [4, 4, 5]
-console.log(oneMoreArr); // Выведет: [4, 4, 5]
+console.log(arr); // Выведет: [1, 2, 3, 4]
+console.log(oneMoreArr); // Выведет: [1, 2, 3, 4]
 ```
